@@ -12,7 +12,7 @@ En la cla de prioridad los elementos tienen una prioridad asociada y se manejan 
 Dependiendo si están ordenados los elementos o no puede aumentar el tiempo en función de la cantidad de elementos (si no está ordenada) pero se puede ser aún más eficiente independientemente de la cantidad de elementos que haya (si es que está ordenada)
 ### Cuál es la estructura de datos adecuada para implementar una pila?Por qué?
 La misma pila, porque nos da una gestión sencilla y eficiente de los elementos en base al principio LIFO.
-### Cémo se puede implementar una cola utilizando una lista en Python?
+### Cómo se puede implementar una cola utilizando una lista en Python?
 Pues se define la clase cola, se le agrega el atributo de ser una lista vacía con _init_, se agregan los métodos para agregar al final con append, eliminar del inicio con pop(0), así se podrán agregar n cantidad de elementos a la cola y se podrá eliminar como la definición lo dicta.
 ## Ejercicios
 ### 1. Escribe un programa que permita crear una lista de nombres y luego muestre los nombres en orden alfabético.
