@@ -2,7 +2,7 @@
 Son aquellos que se utilizan para ordenar elementos dentro de una estructura de datos en la memoria principal de una computadora.
 
 ## 1. Intercambio:
-El algoritmo de ordenación por intercambio, también conocido como Bubble Sort, compara y va intercambiando elementos adyacentes si están en el orden incorrecto. Este proceso se repite hasta que la lista esté ordenada.
+El algoritmo de ordenamiento por intercambio, también conocido como Selection Sort, divide la lista en dos partes: una sublista ordenada y otra sublista no ordenada. En cada iteración, busca el elemento más pequeño de la sublista no ordenada y lo intercambia con el primer elemento de la sublista no ordenada. De esta manera, la sublista ordenada se va construyendo de forma incremental. El proceso se repite hasta que toda la lista esté ordenada.
 
 *Fuente de consulta: GeeksforGeeks (https://www.geeksforgeeks.org/selection-sort/)*
 
