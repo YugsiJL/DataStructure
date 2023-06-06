@@ -1,10 +1,10 @@
-#Algoritmos de Ordenación Interna
+# Algoritmos de Ordenación Interna
 Son aquellos que se utilizan para ordenar elementos dentro de una estructura de datos en la memoria principal de una computadora.
 
-##1. Intercambio (Bubble Sort):
+## 1. Intercambio (Bubble Sort):
 El algoritmo de ordenación por intercambio, también conocido como Bubble Sort, compara y va intercambiando elementos adyacentes si están en el orden incorrecto. Este proceso se repite hasta que la lista esté ordenada.
 
-###C++:
+### C++:
 ```cpp
 #include <iostream>
 using namespace std;
@@ -31,7 +31,7 @@ int main() {
 }
 ```
 
-###Python:
+### Python:
 ```python
 def bubble_sort(arr):
     n = len(arr)
@@ -45,7 +45,7 @@ bubble_sort(arr)
 print("Sorted array:", arr)
 ```
 
-###Java:
+### Java:
 ```java
 import java.util.Arrays;
 
@@ -71,10 +71,10 @@ class BubbleSort {
     }
 }
 ```
-##2. Burbuja:
+## 2. Burbuja:
 El algoritmo de ordenación Burbuja es un algoritmo sencillo que recorre repetidamente una lista de elementos comparando elementos adyacentes y los intercambia si están en el orden incorrecto. El proceso se repite hasta que la lista esté ordenada.
 
-###C++:
+### C++:
 ```cpp
 #include <iostream>
 using namespace std;
@@ -103,7 +103,7 @@ int main() {
 }
 ```
 
-###Python:
+### Python:
 ```python
 def bubble_sort(arr):
     n = len(arr)
@@ -117,7 +117,7 @@ bubble_sort(arr)
 print("Sorted array:", arr)
 ```
 
-###Java:
+### Java:
 ```java
 import java.util.Arrays;
 
@@ -146,10 +146,10 @@ class BubbleSort {
 
 Espero que esta información adicional sea de ayuda. Si tienes alguna otra pregunta, no dudes en hacerla.
 
-##3. Quicksort:
+## 3. Quicksort:
 El algoritmo Quicksort sigue el enfoque de dividir y conquistar para ordenar los elementos. Selecciona un elemento como pivote y particiona el arreglo alrededor del pivote, de manera que los elementos más pequeños estén a su izquierda y los mayores a su derecha. Luego, se aplica recursivamente la misma técnica a las sublistas generadas.
 
-###C++:
+### C++:
 ```cpp
 #include <iostream>
 using namespace std;
@@ -189,7 +189,7 @@ int main() {
 }
 ```
 
-###Python:
+### Python:
 ```python
 def partition(arr, low, high):
     i = (low - 1)
@@ -213,7 +213,7 @@ quick_sort(arr, 0, n - 1)
 print("Sorted array:", arr)
 ```
 
-###Java:
+### Java:
 ```java
 import java.util.Arrays;
 
@@ -252,12 +252,12 @@ class QuickSort {
 }
 ```
 
-###4. ShellSort:
+## 4. ShellSort:
 El algoritmo ShellSort mejora el algoritmo de inserción directa al comparar elementos distantes en lugar de elementos adyacentes. Divide la lista en sublistas más pequeñas y realiza una clasificación parcial. Luego, gradualmente reduce la brecha entre los elementos y realiza clasificaciones más amplias hasta que la
 
  brecha sea 1.
 
-C++:
+### C++:
 ```cpp
 #include <iostream>
 using namespace std;
@@ -287,7 +287,7 @@ int main() {
 }
 ```
 
-Python:
+### Python:
 ```python
 def shell_sort(arr):
     n = len(arr)
@@ -307,7 +307,7 @@ shell_sort(arr)
 print("Sorted array:", arr)
 ```
 
-Java:
+### Java:
 ```java
 import java.util.Arrays;
 
@@ -335,10 +335,10 @@ class ShellSort {
 }
 ```
 
-##5. Ordenación por Distribución:
+## 5. Ordenación por Distribución:
 La ordenación por distribución, también conocida como radix sort, clasifica los elementos basándose en los dígitos individuales o en grupos de dígitos. Se utiliza un ordenamiento estable para clasificar los elementos primero por el dígito menos significativo y luego se avanza hacia los dígitos más significativos.
 
-###C++:
+### C++:
 ```cpp
 #include <iostream>
 using namespace std;
@@ -392,7 +392,7 @@ int main() {
 }
 ```
 
-###Python:
+### Python:
 ```python
 def counting_sort(arr, exp):
     n = len(arr)
@@ -424,7 +424,7 @@ radix_sort(arr)
 print("Sorted array:", arr)
 ```
 
-###Java:
+### Java:
 ```java
 import java.util.Arrays;
 
@@ -475,10 +475,10 @@ class RadixSort {
     }
 }
 ```
-##6. Ordenación por Radix:
+## 6. Ordenación por Radix:
 La Ordenación por Radix es un algoritmo de ordenamiento basado en la representación de los elementos a ordenar en una estructura de datos de longitud fija. Los elementos se ordenan según cada uno de los dígitos, comenzando desde el dígito menos significativo hasta el más significativo.
 
-###C++:
+### C++:
 ```cpp
 #include <iostream>
 using namespace std;
@@ -532,7 +532,7 @@ int main() {
 }
 ```
 
-###Python:
+### Python:
 ```python
 def counting_sort(arr, exp):
     n = len(arr)
@@ -564,7 +564,7 @@ radix_sort(arr)
 print("Sorted array:", arr)
 ```
 
-###Java:
+### Java:
 ```java
 import java.util.Arrays;
 
