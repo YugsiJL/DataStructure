@@ -1,7 +1,7 @@
 # Algoritmos de Ordenación Interna
 Son aquellos que se utilizan para ordenar elementos dentro de una estructura de datos en la memoria principal de una computadora.
 
-## 1. Intercambio (Bubble Sort):
+## 1. Intercambio:
 El algoritmo de ordenación por intercambio, también conocido como Bubble Sort, compara y va intercambiando elementos adyacentes si están en el orden incorrecto. Este proceso se repite hasta que la lista esté ordenada.
 
 ### C++:
