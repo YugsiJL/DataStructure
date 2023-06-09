@@ -80,6 +80,7 @@ class SelectionSort {
     }
 }
 ```
+
 ## 2. Burbuja:
 El algoritmo de ordenación Burbuja es un algoritmo sencillo que recorre repetidamente una lista de elementos comparando elementos adyacentes y los intercambia si están en el orden incorrecto. El proceso se repite hasta que la lista esté ordenada.
 
@@ -154,8 +155,6 @@ class BubbleSort {
     }
 }
 ```
-
-Espero que esta información adicional sea de ayuda. Si tienes alguna otra pregunta, no dudes en hacerla.
 
 ## 3. Quicksort:
 El algoritmo Quicksort sigue el enfoque de dividir y conquistar para ordenar los elementos. Selecciona un elemento como pivote y particiona el arreglo alrededor del pivote, de manera que los elementos más pequeños estén a su izquierda y los mayores a su derecha. Luego, se aplica recursivamente la misma técnica a las sublistas generadas.
