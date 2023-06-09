@@ -11,64 +11,71 @@ El algoritmo de ordenamiento por intercambio, también conocido como Selection S
 #include <iostream>
 using namespace std;
 
-void bubbleSort(int arr[], int n) {
-    for (int i = 0; i < n-1; i++) {
-        for (int j = 0; j < n-i-1; j++) {
-            if (arr[j] > arr[j+1]) {
-                swap(arr[j], arr[j+1]);
+void selectionSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
             }
         }
+        swap(arr[i], arr[minIndex]);
     }
 }
 
 int main() {
-    int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    bubbleSort(arr, n);
+    int arr[] = {64, 25, 12, 22, 11};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    selectionSort(arr, n);
     cout << "Sorted array: ";
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
     return 0;
 }
+
 ```
 
 ### Python:
 ```python
-def bubble_sort(arr):
+def selection_sort(arr):
     n = len(arr)
     for i in range(n - 1):
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+        min_index = i
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        arr[i], arr[min_index] = arr[min_index], arr[i]
 
-arr = [64, 34, 25, 12, 22, 11, 90]
-bubble_sort(arr)
+arr = [64, 25, 12, 22, 11]
+selection_sort(arr)
 print("Sorted array:", arr)
 ```
 
-### Java:
+### Java
 ```java
 import java.util.Arrays;
 
-class BubbleSort {
-    void bubbleSort(int arr[]) {
+class SelectionSort {
+    void selectionSort(int arr[]) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+            int minIndex = i;
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
                 }
             }
+            int temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
         }
     }
 
     public static void main(String args[]) {
-        int arr[] = {64, 34, 25, 12, 22, 11, 90};
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.bubbleSort(arr);
+        int arr[] = {64, 25, 12, 22, 11};
+        SelectionSort selectionSort = new SelectionSort();
+        selectionSort.selectionSort(arr);
         System.out.println("Sorted array: " + Arrays.toString(arr));
     }
 }
