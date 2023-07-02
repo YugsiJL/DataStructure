@@ -64,7 +64,6 @@ El valor 3 se encuentra en el árbol: True
 En este caso, la función buscar_valor devuelve True porque el valor 3 se encuentra en el árbol. Puedes probar con diferentes valores buscados para verificar si se encuentran en el árbol o no.
 ## 3. Implementa la función eliminar_valor en Python que reciba un árbol binario
 y un valor como parámetros, y elimine el nodo con ese valor del árbol.
-Uniendo los 3 ejercicios quedaría:
 ```python
 class ArbolBinario:
     def __init__(self, valor):
