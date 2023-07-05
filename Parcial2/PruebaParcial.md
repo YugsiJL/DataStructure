@@ -139,10 +139,7 @@ def selection_sort(arr):
     
     return arr
 
-# Lista original
 lista = [9, 2, 5, 1, 7]
-
-# Aplicar el algoritmo de selección
 resultado = selection_sort(lista)
 
 print("Resultado de la ordenación:")
