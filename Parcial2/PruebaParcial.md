@@ -28,7 +28,7 @@ resultado = selection_sort(lista)
 print(resultado)
 ```
 La salida del código sería:
-```python
+```
 Lista ordenada:
 [11, 12, 22, 25, 64]
 ```
@@ -67,7 +67,7 @@ print("Lista ordenada:", resultado)
 print("Número de comparaciones realizadas:", num_comparaciones)
 ```
 La salida sería:
-```python
+```
 Lista ordenada: [11, 12, 22, 25, 64]
 Número de comparaciones realizadas: 10
 ```
