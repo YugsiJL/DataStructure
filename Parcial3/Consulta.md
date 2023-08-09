@@ -3,7 +3,7 @@
 La eficiencia de los algoritmos se refiere a la medida de recursos utilizados, como tiempo y memoria, por un algoritmo para resolver un problema. Es importante analizar la eficiencia para determinar qué tan rápido y bien puede resolver un algoritmo un problema, especialmente cuando se trata de conjuntos de datos grandes.
 ## Ejemplo: Comparación de algoritmos de búsqueda lineal y binaria
 Supongamos que tenemos una lista ordenada de números del 1 al 1000 y queremos encontrar el número 750. Para ello, podemos utilizar dos enfoques diferentes: la búsqueda lineal y la búsqueda binaria.
-´´´python
+``` python
 Copy code
 # Búsqueda Lineal
 def busqueda_lineal(lista, objetivo):
@@ -35,7 +35,7 @@ print(f"El número {objetivo} se encuentra en el índice {indice_lineal}")
 
 print("Búsqueda Binaria:")
 print(f"El número {objetivo} se encuentra en el índice {indice_binaria}")
-´´´
+```
 ## Ejercicio: Analizar e identificar el algoritmo más eficiente para buscar un elemento en una lista ordenada
 Para este ejercicio, tenemos una lista ordenada de 10000 números del 1 al 10000 y queremos encontrar el número 5678.
 
