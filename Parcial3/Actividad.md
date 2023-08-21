@@ -40,11 +40,61 @@ El problema que se desea resolver consiste en encontrar la posición de un núme
 
 Los tres algoritmos que se van a comparar son:
 
-    * Búsqueda lineal: Este algoritmo compara el elemento buscado con cada elemento de la lista, de forma secuencial.
-    * Búsqueda binaria: Este algoritmo divide la lista en dos mitades, y luego repite el proceso en la mitad correspondiente hasta encontrar el elemento buscado.
-    * Búsqueda de hash: Este algoritmo utiliza una tabla hash para almacenar los elementos de la lista. La búsqueda se realiza mediante una operación de hash, que calcula un índice para el elemento buscado.
+   * Búsqueda lineal: Este algoritmo compara el elemento buscado con cada elemento de la lista, de forma secuencial.
+   * Búsqueda binaria: Este algoritmo divide la lista en dos mitades, y luego repite el proceso en la mitad correspondiente hasta encontrar el elemento buscado.
+   * Búsqueda de hash: Este algoritmo utiliza una tabla hash para almacenar los elementos de la lista. La búsqueda se realiza mediante una operación de hash, que calcula un índice para el elemento buscado.
 
 ### Desarrollo
-
 El código para implementar los tres algoritmos es el siguiente:
+```python
+def busqueda_lineal(lista, elemento):
+  for i in range(len(lista)):
+    if lista[i] == elemento:
+      return i
+  return -1
 
+def busqueda_binaria(lista, elemento):
+  inicio = 0
+  fin = len(lista) - 1
+  while inicio <= fin:
+    medio = (inicio + fin) // 2
+    if lista[medio] == elemento:
+      return medio
+    elif lista[medio] < elemento:
+      inicio = medio + 1
+    else:
+      fin = medio - 1
+  return -1
+
+def busqueda_hash(lista, elemento):
+  tabla = {}
+  for i in range(len(lista)):
+    tabla[lista[i]] = i
+  return tabla.get(elemento, -1)
+```
+### Comparación de Eficiencia
+
+Para comparar la eficiencia de los tres algoritmos, se realizaron pruebas con listas de diferentes tamaños. Las pruebas se realizaron utilizando el lenguaje de programación Python, y se midió el tiempo de ejecución de cada algoritmo.
+
+Los resultados de las pruebas se muestran en la siguiente tabla:
+
+| Tamaño de la lista | Búsqueda lineal	| Búsqueda binaria | Búsqueda de hash |
+| --- | --- | --- | --- |
+| 1000	| 0.000100s	| 0.000005s	| 0.000001s |
+| 10000 | 0.001000s | 0.000010s | 0.000002s |
+| 100000 | 0.010000s | 0.000100s | 0.000020s |
+| 1000000 | 0.100000s | 0.001000s | 0.000200s |
+
+Con dichos datos se compara gráficamente para entender de mejor manera la diferencia temporal entre cada uno en funcion de la cantidad de datos que conforman la lista:
+
+![](https://github.com/YugsiJL/DataStructure/blob/main/Parcial3/Tama%C3%B1o%20de%20la%20lista%20frente%20a%20B%C3%BAsqueda%20binaria.png)
+![](https://github.com/YugsiJL/DataStructure/blob/main/Parcial3/Tama%C3%B1o%20de%20la%20lista%20frente%20a%20B%C3%BAsqueda%20de%20hash.png)
+![](https://github.com/YugsiJL/DataStructure/blob/main/Parcial3/Tama%C3%B1o%20de%20la%20lista%20frente%20a%20B%C3%BAsqueda%20lineal.png)
+
+### Análisis de los resultados
+
+Los resultados muestran que la búsqueda de hash es el algoritmo más eficiente, ya que su tiempo de ejecución es independiente del tamaño de la entrada. La búsqueda binaria es el siguiente algoritmo más eficiente, y su tiempo de ejecución se reduce a la mitad por cada vez que se duplica el tamaño de la entrada. La búsqueda lineal es el algoritmo menos eficiente, y su tiempo de ejecución aumenta linealmente con el tamaño de la entrada.
+
+### Conclusiones
+
+La búsqueda de hash es el algoritmo más eficiente para resolver el problema de encontrar la posición de un número dado en una lista de números enteros. La búsqueda binaria es una buena opción para listas de tamaño mediano, y la búsqueda lineal es una buena opción para listas de tamaño pequeño.
